@@ -19,7 +19,11 @@ ul {
 li {
   color: #434d71;
   padding-top: 20px;
-  padding-left: 15px;
+  padding-left: 40px;
+}
+
+li:hover {
+  cursor: pointer;
 }
 
 .dash {
