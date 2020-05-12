@@ -1,7 +1,22 @@
 body {
   background-color: #f3f5f6;
+  margin: 0;
+  padding: 0;
 }
 
 .App {
   text-align: center;
+}
+
+.menu {
+  width: 20%;
+  height: 100%;
+  float: left;
+  background-color: #dedede;
+}
+
+.main {
+  width: 80%;
+  height: 100%;
+  float: right;
 }

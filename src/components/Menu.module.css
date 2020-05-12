@@ -2,22 +2,33 @@
 
 ul {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
   font-weight: 500;
   text-align: left;
   font-size: 20pt;
+  background-color: #dedede;
+}
+
+.logoClass {
+  width: 219px;
+  height: 45px;
+  padding: 25px;
 }
 
 li {
   color: #434d71;
+  padding-top: 20px;
+  padding-left: 15px;
 }
 
 .dash {
   background-color: #f3f5f6;
   color: #4ca2ff;
+  padding-bottom: 15px;
 }
 
 .wrapper {
-  background-color: #dedede;
   font-family: "Roboto", sans-serif;
   height: 100%;
 }

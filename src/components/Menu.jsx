@@ -8,6 +8,7 @@ const Menu = () => {
         <img
           src={require("../assets/new-york-times-logo-png-transparent.png")}
           alt=""
+          className={styles.logoClass}
         />
         <li className={styles.dash}>Dashboard</li>
         <li>Articles</li>
