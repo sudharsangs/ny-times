@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+.searchBox {
+  width: 758px;
+  color: #7b8c92;
+  font-size: 24px;
+  background-color: #f8fafb;
+  border-radius: 5px;
+  opacity: 1;
+  height: 60px;
+  border: none;
+  margin: 50px;
+  padding-left: 25px;
+}
+
+.searchBox::placeholder {
+  color: #979eb7 !important;
+  font-size: 24px;
+  font-family: "Material-Design-Iconic-Font", "zmdi-search";
+}
+
+.searchBtn {
+  border-radius: 26px;
+  background-color: #4ca2ff;
+  color: #ffffff;
+  font-weight: 700;
+  width: 155px;
+  height: 52px;
+  opacity: 0.6;
+  border: none;
+}
