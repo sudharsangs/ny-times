@@ -13,6 +13,7 @@ body {
   height: 100vh;
   float: left;
   background-color: #dedede;
+  position: fixed;
 }
 
 .main {

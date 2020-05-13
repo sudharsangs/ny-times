@@ -1,10 +1,35 @@
 import React, { useEffect, useState } from "react";
+import styles from "./News.module.css";
 
-const News = ({ search }) => {
-  const query = search;
-  const apiUrl = `https://api.nytimes.com/svc/search/v2/articlesearch.json?q=${query}&api-key=xrp7NPZMKRQ3U8nmHM5UMXu2XwBKYXei&sort=newest&begin_date=20110101`;
+const News = ({ news }) => {
+  return (
+    <div>
+      <h2>ARTICLES</h2>
 
-  return <div></div>;
+      <div className={styles.tblWrapper}>
+        <table>
+          <tr>
+            <th>Published Date</th>
+            <th>Headline</th>
+            <th className={styles.summary}>Summary</th>
+            <th className={styles.url}>URL</th>
+            <th>Source</th>
+          </tr>
+          {news.map((n, i) => (
+            <tr>
+              <td>{n.pub_date.slice(0, 9)}</td>
+              <td>{n.headline.main}</td>
+              <td className={styles.summary}>{n.abstract}</td>
+              <td className={styles.url}>
+                <a href={n.web_url}>{n.web_url}</a>
+              </td>
+              <td>{n.source}</td>
+            </tr>
+          ))}
+        </table>
+      </div>
+    </div>
+  );
 };
 
 export default News;

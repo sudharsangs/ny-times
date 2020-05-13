@@ -1,0 +1,39 @@
+h2 {
+  color: #7b8c92;
+  text-align: left;
+  padding-left: 70px;
+}
+
+th {
+  color: #7b8c92;
+  padding: 20px;
+}
+
+tr:nth-child(even) {
+  background-color: #f8fafb;
+  padding: 20px;
+}
+
+td {
+  color: #7b8c92;
+  padding: 20px;
+}
+
+.tblWrapper {
+  background-color: #ffffff;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  width: 1400px;
+  box-shadow: 2px 8px 19px #b4b8bc29;
+  border-radius: 8px;
+  margin-bottom: 50px;
+}
+
+.summary {
+  width: 550px;
+}
+
+.url {
+  width: 120px;
+}
