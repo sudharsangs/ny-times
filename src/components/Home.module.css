@@ -19,3 +19,19 @@
   height: 365px;
   width: 429px;
 }
+
+@media only screen and (max-width: 600px) {
+  .imgClass {
+    width: 300px;
+    height: 320px;
+  }
+
+  .heading {
+    font-size: 30px;
+    width: 300px;
+    height: 150px;
+    padding: 0;
+    text-align: center;
+    margin-top: 25px;
+  }
+}

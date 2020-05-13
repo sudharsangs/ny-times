@@ -1,7 +1,15 @@
 h2 {
   color: #7b8c92;
+  padding-top: 20px;
+  padding-left: 20px;
   text-align: left;
-  padding-left: 70px;
+  font-size: 20px;
+}
+
+h3 {
+  color: #7b8c92;
+  text-align: left;
+  padding-left: 50px;
 }
 
 th {
@@ -17,6 +25,10 @@ tr:nth-child(even) {
 td {
   color: #7b8c92;
   padding: 20px;
+}
+
+tr a {
+  color: #4ca2ff;
 }
 
 .tblWrapper {
@@ -36,4 +48,87 @@ td {
 
 .url {
   width: 120px;
+}
+
+.truncate {
+  --max-lines: 1;
+  position: relative;
+  max-height: calc(var(--lh) * var(--max-lines));
+  overflow: hidden;
+  padding-right: 1rem;
+}
+.truncate::before {
+  position: absolute;
+  content: "";
+  inset-block-end: 0;
+  inset-inline-end: 0;
+}
+.truncate::after {
+  content: "";
+  position: absolute;
+  inset-inline-end: 0;
+  width: 1rem;
+  height: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+  table,
+  thead,
+  tbody,
+  td,
+  tr {
+    display: block;
+    text-align: center;
+    overflow-y: hidden;
+  }
+  th {
+    display: none;
+  }
+
+  tr {
+    width: 100vw;
+  }
+
+  .tblWrapper {
+    width: 100vw;
+  }
+
+  .summary {
+    display: none;
+  }
+
+  tr:nth-child(odd) {
+    background: #ffffff;
+  }
+
+  td {
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 50%;
+  }
+
+  td:before {
+    position: absolute;
+    top: 0;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+  }
+
+  td:nth-of-type(1):before {
+    content: "Published Date";
+  }
+  td:nth-of-type(2):before {
+    content: "Headline";
+  }
+  td:nth-of-type(3):before {
+    content: "Summary";
+  }
+  td:nth-of-type(4):before {
+    content: "URL";
+  }
+  td:nth-of-type(5):before {
+    content: "Source";
+  }
 }

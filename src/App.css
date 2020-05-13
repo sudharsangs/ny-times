@@ -21,3 +21,12 @@ body {
   height: 100%;
   float: right;
 }
+
+@media only screen and (max-width: 600px) {
+  .menu {
+    display: none;
+  }
+  .main {
+    width: 100%;
+  }
+}

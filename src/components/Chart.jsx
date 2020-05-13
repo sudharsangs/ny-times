@@ -1,21 +1,21 @@
 import React from "react";
 import { Line } from "react-chartjs-2";
 
-const Chart = () => {
+const Chart = (yCount) => {
   return (
     <div>
-      <Line
+      {/*<Line
         data={{
-          labels: dailyData.map(({ date }) => date),
+          labels: yCount.map(({ date }) => date),
           datasets: [
             {
-              data: dailyData.map(({ confirmed }) => confirmed),
+              data: yCount.map(({ confirmed }) => confirmed),
               label: "Infected",
               borderColor: "#3333ff",
               fill: true,
             },
             {
-              data: dailyData.map(({ deaths }) => deaths),
+              data: yCount.map(({ deaths }) => deaths),
               label: "Deaths",
               borderColor: "red",
               backgroundColor: "rgba(255,0,0,0.5)",
@@ -23,7 +23,7 @@ const Chart = () => {
             },
           ],
         }}
-      />
+      />*/}
     </div>
   );
 };
