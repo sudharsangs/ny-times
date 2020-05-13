@@ -6,21 +6,15 @@ const Chart = (yCount) => {
     <div>
       {/*<Line
         data={{
-          labels: yCount.map(({ date }) => date),
+          labels: yCount.map(({ y.pub_date }) => y.pub_date),
           datasets: [
             {
-              data: yCount.map(({ confirmed }) => confirmed),
-              label: "Infected",
+              data: yCount.map(({ y}) => y.pub_date),
+              label: "No. of articles published",
               borderColor: "#3333ff",
               fill: true,
             },
-            {
-              data: yCount.map(({ deaths }) => deaths),
-              label: "Deaths",
-              borderColor: "red",
-              backgroundColor: "rgba(255,0,0,0.5)",
-              fill: true,
-            },
+            
           ],
         }}
       />*/}
